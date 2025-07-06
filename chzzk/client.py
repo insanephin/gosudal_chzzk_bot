@@ -100,8 +100,7 @@ class ChzzkClient:
     @check_auth
     async def subscribe_chat_event(self, sessionKey: str):
         params = {
-            "sessionKey": sessionKey,
-            "channelId": "1343a0e30ff0acb09f2477a698d070a4"
+            "sessionKey": sessionKey
         }
         return await self.session.post("/open/v1/sessions/events/subscribe/chat", params=params, headers=self.headers)
 
