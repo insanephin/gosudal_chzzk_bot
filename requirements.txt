@@ -1,0 +1,4 @@
+aiohttp
+python-socketio[asyncio]==4.6.1
+fastapi
+uvicorn
